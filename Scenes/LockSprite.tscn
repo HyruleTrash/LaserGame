@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Sprites/Lock.png" type="Texture" id=1]
+
+[node name="Lock" type="Sprite3D"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.5, -1 )
+billboard = 1
+texture = ExtResource( 1 )
+vframes = 4

@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scenes/laserer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Planet.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Reciever.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/BaseLevel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Wall.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Mirror.tscn" type="PackedScene" id=6]
+
+[node name="Level_8_Planets" instance=ExtResource( 4 )]
+
+[node name="Laser" parent="." index="8" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9231, 0, 0 )
+LockingState = 1
+
+[node name="Reciever" parent="." index="9" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7337, 0, -2.29377 )
+LockingState = 3
+
+[node name="Planet2" parent="." index="10" instance=ExtResource( 2 )]
+transform = Transform( 1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 6.82361, 0, 5.00158 )
+Mass = 1.0
+
+[node name="CollisionRadiusSphere" parent="Planet2" index="3"]
+radius = 0.683756
+
+[node name="Planet3" parent="." index="11" instance=ExtResource( 2 )]
+transform = Transform( 2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 4.65438, 0, 2.28614 )
+Mass = 400.0
+LockingState = 2
+
+[node name="CollisionRadiusSphere" parent="Planet3" index="3"]
+radius = 0.684
+
+[node name="Wall" parent="." index="12" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 12.483, 0, 0, -5.48689 )
+
+[node name="Mirror" parent="." index="13" instance=ExtResource( 6 )]
+transform = Transform( -0.766045, 0, 0.642787, 0, 1, 0, -0.642787, 0, -0.766045, 0, 0, 11.844 )
+LockingState = 1
+
+[editable path="Planet2"]
+[editable path="Planet3"]

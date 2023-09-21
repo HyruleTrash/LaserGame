@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/EndLevel.wav-48a2b94601d1a477bf87c2a613fe1c48.sample"
+
+[deps]
+
+source_file="res://Assets/Sfx/EndLevel.wav"
+dest_files=[ "res://.import/EndLevel.wav-48a2b94601d1a477bf87c2a613fe1c48.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

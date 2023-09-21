@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Sprites/Selected.png" type="Texture" id=1]
+
+[node name="SelectionIcon" type="Sprite3D"]
+transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0 )
+visible = false
+billboard = 1
+texture = ExtResource( 1 )
+vframes = 2

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="PlaneMesh" id=1]
+
+[node name="Line" type="MeshInstance"]
+mesh = SubResource( 1 )

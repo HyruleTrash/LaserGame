@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/laserer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Planet.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Reciever.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/BaseLevel.tscn" type="PackedScene" id=6]
+
+[node name="Level_10_Planet_Interaction" instance=ExtResource( 6 )]
+
+[node name="Laser" parent="." index="8" instance=ExtResource( 1 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -10, 0, 10 )
+
+[node name="Reciever" parent="." index="9" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -10 )
+
+[node name="Planet" parent="." index="10" instance=ExtResource( 4 )]
+transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, -10 )
+Mass = 1.0
+LockingState = 2
+
+[node name="MinGravDistanceCircle" parent="Planet" index="2"]
+transform = Transform( 1.245, 0, 0, 0, 1.245, 0, 0, 0, 1.245, 0, 0, 0 )
+
+[node name="Planet2" parent="." index="11" instance=ExtResource( 4 )]
+transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0 )
+Mass = 1.0
+
+[node name="MinGravDistanceCircle" parent="Planet2" index="2"]
+transform = Transform( 1.245, 0, 0, 0, 1.245, 0, 0, 0, 1.245, 0, 0, 0 )
+
+[node name="Planet3" parent="." index="12" instance=ExtResource( 4 )]
+transform = Transform( 1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 10 )
+Mass = 1.0
+LockingState = 1
+
+[node name="MinGravDistanceCircle" parent="Planet3" index="2"]
+transform = Transform( 1.245, 0, 0, 0, 1.245, 0, 0, 0, 1.245, 0, 0, 0 )
+
+[editable path="Planet"]
+[editable path="Planet2"]
+[editable path="Planet3"]

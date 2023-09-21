@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/StartLevel.wav-70f1e333cb5e5779c64a7f8f6b82fc67.sample"
+
+[deps]
+
+source_file="res://Assets/Sfx/StartLevel.wav"
+dest_files=[ "res://.import/StartLevel.wav-70f1e333cb5e5779c64a7f8f6b82fc67.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

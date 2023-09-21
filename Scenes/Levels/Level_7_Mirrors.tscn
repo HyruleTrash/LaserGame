@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/laserer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Wall.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Mirror.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Reciever.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/BaseLevel.tscn" type="PackedScene" id=5]
+
+[node name="Level_7_Mirrors" instance=ExtResource( 5 )]
+
+[node name="LazerHolder" parent="." index="7"]
+MaxLazers = 20
+
+[node name="Laser" parent="." index="8" instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -10, 0, 10 )
+ShouldShootLaser = true
+LockingState = 3
+
+[node name="Mirror" parent="." index="9" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.6125, 0, -6.2924 )
+LockingState = 1
+
+[node name="Mirror2" parent="." index="10" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 6.21716, 0, -6.2924 )
+ID = 2
+LockingState = 1
+
+[node name="Mirror3" parent="." index="11" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.21716, 0, 2.71095 )
+ID = 3
+LockingState = 1
+
+[node name="Mirror4" parent="." index="12" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.234876, 0, -2.3569 )
+ID = 3
+LockingState = 1
+
+[node name="Mirror5" parent="." index="13" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.234876, 0, 9.95645 )
+ID = 4
+LockingState = 1
+
+[node name="Mirror6" parent="." index="14" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 17.3, 0, 9.956 )
+ID = 5
+LockingState = 1
+
+[node name="Reciever" parent="." index="15" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3, 0, -10 )
+
+[node name="Wall" parent="." index="16" instance=ExtResource( 2 )]
+transform = Transform( 2.6211, 0, 0, 0, 1, 0, 0, 0, 2.6211, -5.05989, 0, 2.87548 )
+
+[node name="Wall2" parent="." index="17" instance=ExtResource( 2 )]
+transform = Transform( 5.27433, 0, 0, 0, 1, 0, 0, 0, 1, 7.62921, 0, 5.48915 )
+
+[node name="Wall3" parent="." index="18" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 9.44848, 11.9385, 0, -4.99112 )

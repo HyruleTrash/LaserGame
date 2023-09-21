@@ -1,0 +1,22 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Scripts/SceneManager.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/TestLevel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Menu.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/LevelSelect.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Levels/Level_1_LazerIntro.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Levels/Level_2_Rotation_Intro.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Levels/Level_3_Movement_Intro.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Levels/Level_4_Mirror_Intro.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Levels/Level_6_Mirrors.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Levels/Level_5_Mirrors.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Levels/Level_8_Planets.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Levels/Level_9_Planet_Interaction.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Levels/Level_7_Mirrors.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/Levels/Level_7_Planet_Intro.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/Levels/Level_10_Planet_Interaction.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Scenes/Levels/Level_11_Planet_Interaction.tscn" type="PackedScene" id=16]
+
+[node name="SceneManager" type="Node"]
+script = ExtResource( 1 )
+Levels = [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 16 ) ]

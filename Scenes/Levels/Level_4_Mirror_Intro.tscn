@@ -1,0 +1,54 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Scenes/laserer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Wall.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Mirror.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Models&Materials/Fonstars-4Bo0p.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://Scenes/Reciever.tscn" type="PackedScene" id=5]
+[ext_resource path="res://addons/SIsilicon.3d.text/label_3d.gd" type="Script" id=6]
+[ext_resource path="res://Scenes/BaseLevel.tscn" type="PackedScene" id=7]
+[ext_resource path="res://addons/SIsilicon.3d.text/icon_label_3d.svg" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+extra_spacing_bottom = 3
+extra_spacing_space = 20
+font_data = ExtResource( 4 )
+
+[node name="Level_4_Mirror_Intro" instance=ExtResource( 7 )]
+
+[node name="Laser" parent="." index="8" instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.44748, 0.0726032, -0.113252 )
+ShouldShootLaser = true
+LockingState = 2
+
+[node name="Reciever" parent="." index="9" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.73792, 0, -9.66844 )
+LockingState = 3
+
+[node name="Wall" parent="." index="10" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 6.60099, 0, 0, 0 )
+
+[node name="Mirror" parent="." index="11" instance=ExtResource( 3 )]
+transform = Transform( 0.930123, 0, -0.367248, 0, 1, 0, 0.367248, 0, 0.930123, -7.447, 0.073, -9.668 )
+LockingState = 1
+
+[node name="Label3D3" type="Spatial" parent="." index="12"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 7.438, 1.87, -2.244 )
+script = ExtResource( 6 )
+__meta__ = {
+"_editor_icon": ExtResource( 8 )
+}
+text = "Mirrors reflect 
+Lazers"
+text_size = 1.761
+font = SubResource( 1 )
+align = 0
+color = Color( 0.603922, 0.603922, 0.603922, 1 )
+metallic = 0.0
+roughness = 0.5
+emission_color = Color( 1, 1, 1, 1 )
+emission_strength = 0.0
+extrude = 0.05
+max_steps = 256
+step_size = 1.0

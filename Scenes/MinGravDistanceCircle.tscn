@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/MinGravDistanceCircle.gd" type="Script" id=1]
+
+[sub_resource type="SphereMesh" id=6]
+
+[sub_resource type="SpatialMaterial" id=7]
+flags_transparent = true
+albedo_color = Color( 0.690196, 1, 0.909804, 0.133333 )
+metallic_specular = 0.0
+roughness = 0.0
+
+[node name="MinGravDistanceCircle" type="MeshInstance"]
+mesh = SubResource( 6 )
+skeleton = NodePath("../..")
+material/0 = SubResource( 7 )
+script = ExtResource( 1 )
